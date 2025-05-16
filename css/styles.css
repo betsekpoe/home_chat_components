@@ -1,0 +1,134 @@
+:root {
+  --dark: #101010;
+  --black: #000000;
+  --white: #fcfcfd;
+  --border: #191919;
+  --blue: #2d057c;
+
+  --font-size-normal: 11pt;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-normal);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.background {
+  background-color: var(--black);
+  background: url("bgpattern.svg");
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+form {
+  background-color: var(--white);
+  width: 30%;
+  height: 65%;
+  gap: 50px;
+  border-radius: 15px;
+}
+
+form,
+form div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+form div {
+  gap: 15px;
+  width: 80%;
+}
+
+form div span {
+  font-size: smaller;
+}
+
+form div label input {
+  font-size: var(--font-size-normal);
+  width: 80%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+
+  /* border-bottom: 1px solid var(--black); */
+  border: 1px solid var(--black);
+  border-radius: 0px 25px 25px 0px;
+  text-indent: 10px;
+}
+
+form input[type="submit"] {
+  font-size: var(--font-size-normal);
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 15px 10px;
+  border: 0;
+  width: 30%;
+  border-radius: 25px;
+  transition: 0.3s ease-out;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+form div label {
+  display: flex;
+  justify-content: center;
+}
+
+form div label i{
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 25px 0px 0px 25px;
+    padding: 15px;
+    width: 25px;
+}
+
+form a {
+  text-decoration: none;
+  color: var(--blue);
+}
