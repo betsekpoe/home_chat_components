@@ -6,6 +6,7 @@
   --blue: #2d057c;
 
   --font-size-normal: 11pt;
+  --rounded: 10px;
 }
 
 @font-face {
@@ -95,7 +96,7 @@ form div label input {
 
   /* border-bottom: 1px solid var(--black); */
   border: 1px solid var(--black);
-  border-radius: 0px 25px 25px 0px;
+  border-radius: 0px var(--rounded) var(--rounded) 0px;
   text-indent: 10px;
 }
 
@@ -106,7 +107,7 @@ form input[type="submit"] {
   padding: 15px 10px;
   border: 0;
   width: 30%;
-  border-radius: 25px;
+  border-radius: var(--rounded);
   transition: 0.3s ease-out;
 }
 
@@ -123,7 +124,7 @@ form div label {
 form div label i{
     background-color: var(--dark);
     color: var(--white);
-    border-radius: 25px 0px 0px 25px;
+    border-radius: var(--rounded) 0px 0px var(--rounded);
     padding: 15px;
     width: 25px;
 }
