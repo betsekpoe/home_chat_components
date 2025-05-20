@@ -1,2 +1,13 @@
 @import "base_css.css";
 
+:root {
+  --dark: #101010;
+  --black: #000000;
+  --white: #fcfcfd;
+  --border: #191919;
+  --blue: #2d057c;
+
+  --font-size-normal: 11pt;
+  --rounded: 10px;
+}
+
